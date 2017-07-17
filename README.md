@@ -24,8 +24,8 @@ BookBot is currently limited to books and reviews from Amazon. Addition of books
 2. check for discounts and offers
 3. Preview/first few pages of the book
 
-# Prerequisites for the code:
+# Prerequisites for using the code:
 1. Python 2.7 with python-amazon-simple-product-api module 
-2. Amazon API credentials for the amazon simple product API
+2. Amazon API credentials for the amazon simple product API and embedding the same while creating the Lambda function
 
 
