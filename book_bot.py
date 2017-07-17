@@ -1,14 +1,14 @@
 import logging
 import math
-from amazon.api import AmazonAPI
+import os 
 import unicodedata
 import base64
 import json
 
+from amazon.api import AmazonAPI
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
-
 
 def get_slots(intent_request):
     return intent_request['currentIntent']['slots']
@@ -25,7 +25,6 @@ def build_validation_result(is_valid, violated_slot, message_content):
         'violatedSlot': violated_slot,
         'message': {'contentType': 'PlainText', 'content': message_content}
     }
-
 	
 def close(session_attributes, fulfillment_state, message):
     response = {
@@ -75,9 +74,10 @@ def get_details(dataOfAllBooks, book):
 
 # function to get the book details from Amazon.com
 def getTop5Books(queryTerm):
-	AWSAccessKeyId = 'AKIAJCMZHQR6KKOAH4SQ'
-	AWSSecretKey = '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'
-	associateTag = '200b3-21'
+	# AWSACCESSKEYID, AWSSECRETKEY, ASSOCIATETAG are declared as environment varialbes while creating the Lambda function
+	AWSAccessKeyId = os.environ.get("AWSACCESSKEYID")
+	AWSSecretKey = os.environ.get("AWSSECRETKEY")
+	associateTag = os.environ.get("ASSOCIATETAG")
 	dataOfAllBooks = []
 	api = AmazonAPI(AWSAccessKeyId , AWSSecretKey , associateTag)
 	try:
