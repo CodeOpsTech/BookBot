@@ -3,7 +3,7 @@ import json
 import unicodedata
 import base64
 
-def elicit_intent(message, image_url, title):
+def elicit_intent(message, image_url, title, book_url):
 	return {
 		'dialogAction' : {
 		'type' : 'ElicitIntent',
@@ -11,6 +11,7 @@ def elicit_intent(message, image_url, title):
             'responseCard' : {
                 'version' : 1,
                 'contentType' : 'application/vnd.amazonaws.card.generic',
+                'attachmentLinkUrl' : book_url,
                 'genericAttachments' : [
                     {
                         'title' : title,
@@ -74,10 +75,9 @@ def lambda_handler(event, context):
     try:
         session_attributes = event['sessionAttributes']['data']
         decoded = base64.b64decode(session_attributes)
-        print 'decoded', decoded
         data = json.loads(decoded)
         message = {'contentType': 'PlainText', 'content': """Here is the cover pic for {}""".format(data[0]['title'])}
-        return elicit_intent(message, data[0]['image_url'], data[0]['title'])
+        return elicit_intent(message, data[0]['image_url'], data[0]['title'], data[0]['url'])
     except:
         message = {'contentType': 'PlainText', 'content': """You haven't serached for a book yet. Try out 'suggest me a docker book' or how about these trending ones?"""}
         return elicit(message)
