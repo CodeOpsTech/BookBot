@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: python-amazon-simple-product-api
+Version: 2.2.11
+Summary: A simple Python wrapper for the Amazon.com Product Advertising API
+Home-page: https://github.com/yoavaviram/python-amazon-simple-product-api
+Author: Yoav Aviram
+Author-email: yoav.aviram@gmail.com
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: amazon,product advertising,api
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License

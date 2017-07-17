@@ -1,0 +1,10 @@
+../amazon/__init__.py
+../amazon/api.py
+../amazon/__init__.pyc
+../amazon/api.pyc
+top_level.txt
+zip-safe
+SOURCES.txt
+requires.txt
+PKG-INFO
+dependency_links.txt
