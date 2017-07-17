@@ -23,7 +23,7 @@ BookBot is built using:
 
 Below is the architectural diagram for the same:
 
-![image](https://user-images.githubusercontent.com/19647546/28265367-f98f4576-6b0c-11e7-8f6e-54d0a3832eb0.PNG)
+![image](https://user-images.githubusercontent.com/19647546/28272569-84d35a0c-6b29-11e7-820d-f0d4db1144e5.PNG)
 
 # What to expect in the future?
 BookBot is currently limited to books and reviews from Amazon. Addition of books and reviews from goodreads and other websites. 
