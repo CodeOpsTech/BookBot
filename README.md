@@ -9,7 +9,7 @@ The best way to learn something is to read! Searching for books online has alway
 BookBot primarily uses Amazon's API to get top rated books given a technical topic. One can converse with the bot and check out the price details(in USD), author details, reviews of the book, publisher details, cover picuture of the book, number of pages and also view other options for the given topic. 
 
 # How to use BookBot?
-Bookbot has been customised to respond like Hermione Granger and messaging to the facebook page 'BookBot' will trigger your conversation. The bot can be initiated with a gretting like a 'hi' or 'hello'. BookBot suggests the top rated book on Amazon for a given technical topic. 
+Bookbot has been customised to respond like Hermione Granger and messaging to the facebook page '<a href= "https://www.facebook.com/BookBot-1293871334043466/">BookBot</a>' will trigger your conversation. The bot can be initiated with a gretting like a 'hi' or 'hello'. BookBot suggests the top rated book on Amazon for a given technical topic. 
 
 The basic utterance is: 'suggest a <title> book'. Example: 'suggest a python book', this returns the top rated python book and also displays a few options in the form of buttons. 
 
