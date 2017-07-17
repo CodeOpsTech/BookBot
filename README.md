@@ -1,19 +1,27 @@
 # BookBot
-This BookBot is for finding technical books from Amazon
+Bookbot is a chatbot built using cognitive services and serverless architecture. It is a very conversational interface for finding technical books from Amazon
 
 # Why BookBot?
 'When in doubt, go to the library' says Hermione Granger, the famous bookworm character from the Harry Potter series. 
 
 The best way to learn something is to read! Searching for books online has always been a difficult task with numerous options available from numerous websites. BookBot is here to solve it for you! It can suggest you the top rated book from Amazon(the best destination for book lovers) given a technical topic. it can also help you with reviews, cost details, author details etc.
 
-# How can BookBot help you?
 BookBot primarily uses Amazon's API to get top rated books given a technical topic. One can converse with the bot and check out the price details(in USD), author details, reviews of the book, publisher details, cover picuture of the book, number of pages and also view other options for the given topic. 
 
 # How to use BookBot?
-Messaging to the facebook page 'BookBot' will trigger your conversation. It has been customised to respond like Hermione Granger
+Bookbot has been customised to respond like Hermione Granger and messaging to the facebook page 'BookBot' will trigger your conversation. The bot can be initiated with a gretting like a 'hi' or 'hello'. BookBot suggests the top rated book on Amazon for a given technical topic. 
+
+The basic utterance is: 'suggest a <title> book'. Example: 'suggest a python book', this returns the top rated python book and also displays a few options in the form of buttons. 
+
+Please check out <a href= "BookBot/Testing instructions">Testing instructions</a> for more details on how to use BookBot.
 
 # BookBot Architecture
-BookBot is built using AWS Lex and AWS Lambda. Below is the architectural diagram for the same:
+BookBot is built using:
+1. AWS Lex - for Natural Language Processing 
+2. AWS Lambda - serverless platform for the business logic
+3. CloudWatch - to monitor and log data of various Lambda functions.
+
+Below is the architectural diagram for the same:
 
 ![image](https://user-images.githubusercontent.com/19647546/28265367-f98f4576-6b0c-11e7-8f6e-54d0a3832eb0.PNG)
 
