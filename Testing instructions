@@ -1,0 +1,28 @@
+Objective:
+BookBot suggests the top rated book on Amazon for a given technical topic
+
+Testing Instructions
+One can initiate a bot with a greeting such as 'hi' or 'hello'
+The bot can give you the following details for a book, suggested on the given topic:
+  1. Authors: 
+        The bot can give you the details of the author and also their most popular book
+        Sample Utterance: who is the author?
+  2. Cost:
+        Returns the price of the book
+        Sample Utterance: what is the cost?
+  3. Reviews:
+        Returns a URL for the reviews of the book
+        Sample Utterance: reviews?
+  4. Pages:
+        Returns the number of pages
+        Sample Utterance: Number of pages?
+  5. More Options:
+        Returns tiles of books similar to the suggested book
+        Sample Utterance: show more options
+  6. Publisher:
+        Returns the publisher details
+        Sample Utterance: who is the publisher?
+  7. Cover-pic:
+        Returns the cover picture of the book
+        Sample Utterance: show me the cover picture
+       
