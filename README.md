@@ -8,11 +8,7 @@ The best way to learn something is to read! Searching for books online has alway
 
 # BookBot Architecture
 BookBot is built using AWS Lex and AWS Lambda. 
-
-<p align="center">
-  <img src="BookBot/bookbot architecture.PNG" />
-  
-</p>
+![image](https://user-images.githubusercontent.com/19647546/28264992-3151a550-6b0b-11e7-9e92-8047bbfc6f35.PNG)
 
 # What's the future?
 BookBot is presently limited to books and reviews from Amazon. Addition of books and reviews from goodreads and other websites. 
