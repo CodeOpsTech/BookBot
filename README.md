@@ -17,12 +17,13 @@ BookBot is built using AWS Lex and AWS Lambda. Below is the architectural diagra
 
 ![image](https://user-images.githubusercontent.com/19647546/28265367-f98f4576-6b0c-11e7-8f6e-54d0a3832eb0.PNG)
 
-# What's the future?
+# What to expect in the future?
 BookBot is currently limited to books and reviews from Amazon. Addition of books and reviews from goodreads and other websites. 
 
-1. Addition of 'Compare' feature so that users can compare books, reviews and cost details across other websites
-2. check for discounts and offers
-3. Preview/first few pages of the book
+1. BookBot is currently limited only to technical books, the bot will be available for all the genres in the future
+2. Addition of 'Compare' feature so that users can compare books, reviews and cost details across other websites
+3. Details of discounts and offers
+4. Preview/first few pages of the book 
 
 # Prerequisites for using the code:
 1. Python 2.7 with python-amazon-simple-product-api module 
