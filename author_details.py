@@ -1,5 +1,6 @@
 import ast
 import json
+import os
 import unicodedata
 import base64
 from amazon.api import AmazonAPI
@@ -72,9 +73,12 @@ def lambda_handler(event, context):
 		data = json.loads(decoded)
 		title = data[0]['title']
 		
-		AWSAccessKeyId = 'AKIAJCMZHQR6KKOAH4SQ'
-		AWSSecretKey = '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'
-		associateTag = '200b3-21'
+		# AWSACCESSKEYID, AWSSECRETKEY, ASSOCIATETAG are declared as environment varialbes while creating the Lambda function
+		
+		AWSAccessKeyId = os.environ.get("AWSACCESSKEYID")
+		AWSSecretKey = os.environ.get("AWSSECRETKEY")
+		associateTag = os.environ.get("ASSOCIATETAG")
+		
 		api = AmazonAPI(AWSAccessKeyId , AWSSecretKey , associateTag)
 		decoded = base64.b64decode(session_attributes)
 		
