@@ -11,7 +11,7 @@ BookBot primarily uses Amazon's API to get top rated books given a technical top
 # How to use BookBot?
 BookBot has been customised to respond like Hermione Granger and messaging to the facebook page '<a href= "https://www.facebook.com/BookBot-1293871334043466/">BookBot</a>' will trigger your conversation. The bot can be initiated with a greeting like a 'hi' or 'hello'. The basic utterance is: 'suggest a <title> book'. Example: 'suggest a python book', this returns the top rated python book and also displays a few options() in the form of buttons. 
 
-For more details on how to use BookBot, check out <a href= "https://github.com/CodeOpsTechnologies/BookBot/blob/master/Testing%20instructions">Testing instructions</a>.
+For more details on how to use BookBot, check out <a href= "https://github.com/CodeOpsTechnologies/BookBot/blob/master/Testing_Instructions.md">Testing Instructions</a>.
 
 # BookBot Architecture
 BookBot is built using:
