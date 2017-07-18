@@ -25,8 +25,8 @@ def elicit_intent(message, image_url, title):
                                 'value' : 'reviews?'
                             },
                             {
-                                'text' : 'Pulisher',
-                                'value' : 'publisher?'
+                                'text' : 'Pages',
+                                'value' : 'pages??'
                             }
                             ]
                         
@@ -79,5 +79,5 @@ def lambda_handler(event, context):
         message = {'contentType': 'PlainText', 'content': """{}""".format(data[0]['publisher'])}
         return elicit_intent(message, data[0]['image_url'], data[0]['title'])
     except:
-        message = {'contentType': 'PlainText', 'content': """You haven't serached for a book yet. Try out 'suggest me a docker book' or how about these trending ones?"""}
+        message = {'contentType': 'PlainText', 'content': """:-O Oops I forgot what we were talking about. How about these trending ones?"""}
         return elicit(message)
