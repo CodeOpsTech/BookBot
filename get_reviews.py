@@ -31,7 +31,7 @@ def elicit(message):
 					'value' : 'show C book'
 				},
 				{
-					'text' : 'python',
+					'text' : 'Python',
 					'value' : 'show python book'
 				}
 			]
@@ -54,5 +54,5 @@ def lambda_handler(event, context):
         message = {'contentType': 'PlainText', 'content': """You can find the reviews for {} at {} """.format(data[0]['title'], data[0]['reviews_url'])}
         return elicit_intent(message)
     except:
-		message = {'contentType': 'PlainText', 'content': """Please select a book first. How about these to start with?"""}
+		message = {'contentType': 'PlainText', 'content': """Please choose a topic. How about these to start with?"""}
 		return elicit(message)
