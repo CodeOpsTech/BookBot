@@ -1,8 +1,12 @@
 Objective:
-BookBot suggests the top rated book on Amazon for a given technical topic. The basic utterance is: 'suggest a <title> book'. Example: 'suggest a python book'
+BookBot suggests the top rated book on Amazon for a given technical topic. The basic utterance is: 'suggest a <title> book'. 
+Example: 'suggest a python book'
 
 Testing Instructions
-One can initiate the bot with a greeting such as 'hi' or 'hello'
+One can initiate the bot with a greeting such as 'hi' or 'hello', the bot will greet and expect the user to enter a technical topic or use the bot's suggestions(buttons) to get the top rated book for the given topic
+
+![image](https://user-images.githubusercontent.com/19647546/28301801-faf08692-6ba6-11e7-98bc-e4403115eba3.PNG)
+
 The bot can give you the following details for a book, suggested on the given topic:
   1. Authors: 
         The bot can give you the details of the author and also their most popular book
